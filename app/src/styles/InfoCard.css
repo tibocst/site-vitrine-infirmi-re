@@ -1,0 +1,46 @@
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+}
+
+.info-card > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    width: 220px;
+    background-color: white;
+    border: 3px solid #377989;
+    border-radius: 50%;
+}
+
+.info-card > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: #377989;
+    border-radius: 50%;
+}
+
+.info-card > div > div:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+    transition-duration: 1sec;
+}
+
+.info-card > div > div > img {
+    height: 75px;
+    filter: invert(100%) sepia(100%) saturate(13%) hue-rotate(209deg) brightness(105%) contrast(100%);}
+
+.info-card > p {
+    font-size: 2em;
+    font-weight: 200;
+    opacity: 70%;
+    margin: 0;
+    text-align: center;
+}

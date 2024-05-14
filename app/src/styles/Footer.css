@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2c37;
+    border-top: 10px solid #f6d3a2;
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.footer > div > p {
+    color: white;
+    text-align: center;
+}
+
+.google-icon_a {
+    display: flex;
+    background-color: #151e25;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    transition: background-color 800ms ease-in-out;
+}
+
+.google-icon_a:hover {
+    background-color: #81bce9;
+    transition: background-color 800ms ease-in-out;
+}
+
+.google-icon_a > img {
+    height: 40px;
+    width: 40px;
+}
+
+.footer-lien-ordre{
+    color: white;
+}
+
+.footer-lien-ordre > a{
+    color: #f6d3a2;
+}
