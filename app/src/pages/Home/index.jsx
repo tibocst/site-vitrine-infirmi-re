@@ -1,11 +1,11 @@
 import "../../styles/Home.css";
-import pdp from "../../assets/infirmiere-seringue.jpg";
-import plaque from "../../assets/plaque.jpg";
+import pdp from "../../assets/pdp-deb.png";
 import PhoneNumber from "../../components/PhoneNumber";
-import phone from '../../assets/phone-solid.svg'
-import location from '../../assets/location-dot-solid.svg'
-import graduation from '../../assets/graduation-cap-solid.svg'
-import calendar from '../../assets/calendar-check-solid.svg'
+import phone from "../../assets/phone-solid.svg";
+import location from "../../assets/location-dot-solid.svg";
+import graduation from "../../assets/graduation-cap-solid.svg";
+import calendar from "../../assets/calendar-check-solid.svg";
+import check from "../../assets/circle-check-solid.svg";
 import InfoCard from "../../components/InfoCard";
 
 function Home() {
@@ -13,151 +13,118 @@ function Home() {
     <div className="home">
       <div className="home-main-info">
         <h2>Bienvenue au cabinet de</h2>
-        <h1>ANGEL DUMONTANT, INFIRMIÈRE À MONTPELLIER</h1>
-        <PhoneNumber phoneNumber={"41 15 10 20 30"} />
+        <h1>DEBORAH COSTE, INFIRMIÈRE À ORANGE</h1>
+        <PhoneNumber phoneNumber={"06 07 40 54 64"} />
       </div>
       <div className="home-info">
         <div className="home-info-pdp">
           <div>
-            <div className="home-info-pdp_img">
-              <img src={pdp} alt="infirmière" />
+            <div>
+              <div className="home-info-pdp_img">
+                <img src={pdp} alt="infirmière" />
+              </div>
+            </div>
+            <div className="home-info-pdp_text" id="votre-infirmiere">
+              <h1>VOTRE INFIRMIÈRE</h1>
+              <p>
+                Nous sommes situés sur la ville d'<b>Orange</b> et assurons tous
+                types de soins infirmiers tous les jours de <b>6 h à 20 h</b>.{" "}
+              </p>
+              <p>
+                Notre cabinet comporte uniquement des infirmières{" "}
+                <b>diplômées d'État</b> répondant à l'Ordre des infirmiers.
+              </p>
+              <p>
+                Elles seront <b>bienveillantes, douces</b> et sauront s'occuper
+                de leur patientelle de la meilleure des manières.
+              </p>
+              <p>
+                Les soins peuvent être pratiqués{" "}
+                <b>à domicile ou bien au cabinet</b>. Ils nécessiteront une
+                prescription médicale.
+              </p>
+              <p>
+                Vous pouvez prendre rendez-vous avec nos infirmières au{" "}
+                <b>06 07 40 54 64</b>.
+              </p>
             </div>
           </div>
-          <div className="home-info-pdp_text">
-            <h1>VOTRE INFIRMIÈRE</h1>
+        </div>
+        <div className="home-info-stack" id="home-info-stack">
+          <div className="home-info-pratique" id="infos">
+            <h1>INFORMATIONS PRATIQUES</h1>
+            <div className="home-info-pratique_card">
+              <InfoCard
+                icon={graduation}
+                text={"Carte vitale et tiers payant"}
+                altIcon={"graduation logo"}
+              />
+              <InfoCard
+                icon={location}
+                text={"Cabinet et Domicile"}
+                altIcon={"location logo"}
+              />
+              <InfoCard
+                icon={calendar}
+                text={"7 jours sur 7"}
+                altIcon={"calendar logo"}
+              />
+              <InfoCard
+                icon={phone}
+                text={"06 07 40 54 64"}
+                altIcon={"phone logo"}
+              />
+            </div>
+          </div>
+          <div className="home-info-soin">
+            <h1>SOINS INFIRMIERS DOMICILE ET CABINET À ORANGE</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              rutrum sed libero non ornare. Morbi nec pellentesque dolor, id
-              vulputate ipsum. Nulla facilisi. Nulla in luctus nisl. Suspendisse
-              augue odio, vehicula ut placerat nec, condimentum eget augue.
-              Quisque condimentum ipsum ut ipsum ultrices consequat. Morbi vel
-              congue nunc. Etiam aliquam elementum rutrum. Vestibulum ante ipsum
-              primis in faucibus orci luctus et ultrices posuere cubilia curae;
-              Vestibulum varius, turpis eu bibendum mattis, ante urna tempus
-              libero, sit amet volutpat mauris libero ac neque.
+              Nous effectuons différents soins et prenons en charge tous types
+              de pathologies dans le cadre de :
             </p>{" "}
+            <p><img className="check-green" src={check} alt="check icon" /> <b>vos soins de pansements et post opératoires</b></p>
+            <p><img className="check-green" src={check} alt="check icon" /> <b>vos prises de sang et perfusions</b></p>
+            <p><img className="check-green" src={check} alt="check icon" /> <b>vos soins diabétiques ou cancérologiques</b></p>
+            <p><img className="check-green" src={check} alt="check icon" /> <b>d'autres types de soins médicaux sont évidemment disponibles</b></p>{" "}
             <p>
-              Vestibulum elit erat, efficitur eu porttitor in, tempus at metus.
-              Sed vehicula nibh tincidunt quam pellentesque, vel sollicitudin
-              quam pretium. Morbi in risus vehicula, pellentesque urna sed,
-              pellentesque nisl. Donec a quam libero. Morbi eu odio ut eros
-              efficitur placerat. Aliquam lacinia mi nibh, non ultricies tortor
-              pellentesque ac. Vivamus pretium ante mi. Cras fringilla libero a
-              elit cursus feugiat. Nulla quam lorem, rutrum in leo ut, mattis
-              consectetur lorem. Mauris auctor lacus risus, semper viverra lorem
-              porta in. Vestibulum id nisl ut dolor tincidunt maximus. Nullam
-              odio risus, molestie non convallis id, ultrices eget metus. Fusce
-              egestas nisl vitae dolor laoreet, porttitor tincidunt lacus
-              scelerisque. Sed ultricies risus in tellus semper, eu dapibus erat
-              sollicitudin. Nam rutrum elit sed maximus consectetur. Morbi ipsum
-              lorem, sodales vitae mi sit amet, hendrerit suscipit est. Quisque
-              placerat finibus eros sed facilisis. Ut tristique hendrerit orci,
-              eu viverra mauris facilisis eu. Suspendisse scelerisque nisi vel
-              nibh feugiat sagittis. Donec cursus non dui non mollis. Donec
-              mattis nunc odio, sed aliquet nunc sagittis in. Aenean vulputate
-              mauris sed gravida sagittis.{" "}
+              Du début de votre prise en charge jusqu'à votre guérison, nous
+              sommes <b>à l'écoute</b> de vos besoins et intervenons pour{" "}
+              <b>éviter les douleurs et assurer une meilleure qualité de vie</b>
+              . Nous nous déplaçons sur demande et sur rendez-vous sur Orange
+              uniquement. Nos soins sont effectués sur prescription médicale.
+              Nous pratiquons le <b>tiers payant</b> sur présentation de la
+              carte vitale et d'une mutuelle ou CMU. Nous restons à votre
+              disposition pour davantage de renseignement.
             </p>{" "}
-            <p>
-              Sed nec venenatis ipsum. Etiam mattis eu lacus volutpat congue.
-              Sed gravida, ipsum quis interdum pellentesque, ex mi dictum elit,
-              vitae malesuada lacus nibh sit amet ex. Fusce sagittis urna eu
-              neque gravida commodo. Curabitur dignissim faucibus volutpat. Sed
-              non urna a velit pharetra sodales. Maecenas porta non urna at
-              iaculis. Quisque feugiat consequat pharetra. Quisque et semper
-              nibh, ac volutpat quam. Orci varius natoque penatibus et magnis
-              dis parturient montes, nascetur ridiculus mus. Nulla venenatis
-              auctor ante ac rutrum.
-            </p>{" "}
-            <p>
-              {" "}
-              Cras euismod nunc fringilla justo rhoncus, id lobortis mauris
-              pulvinar. Nam aliquet magna id augue porttitor, a maximus libero
-              congue. Sed metus turpis, dignissim quis dapibus vitae, cursus
-              quis orci. Etiam rutrum fermentum tortor, a ornare lectus iaculis
-              eu. Vestibulum fringilla massa at quam scelerisque porttitor. Sed
-              condimentum at tellus id pharetra. Quisque pretium mi ipsum, a
-              luctus tellus hendrerit eu. Suspendisse potenti. Sed interdum
-              scelerisque vestibulum.
-            </p>
           </div>
         </div>
-        <div className="home-info-pratique">
-          <h1>INFORMATIONS PRATIQUES</h1>
-          <div className="home-info-pratique_card">
-            <InfoCard icon={graduation} text={"Carte vitale et tiers payant"} altIcon={"graduation logo"} />
-            <InfoCard icon={location} text={"Cabinet et Domicile"} altIcon={"location logo"} />
-            <InfoCard icon={calendar} text={"7 jours sur 7"} altIcon={"calendar logo"} />
-            <InfoCard icon={phone} text={"41 15 10 20 30"} altIcon={"phone logo"} />
-          </div>
-        </div>
-        <div className="home-info-soin">
-          <h1>SOINS INFIRMIERS DOMICILE ET CABINET À MONTPELLIER</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum
-            sed libero non ornare. Morbi nec pellentesque dolor, id vulputate
-            ipsum. Nulla facilisi. Nulla in luctus nisl. Suspendisse augue odio,
-            vehicula ut placerat nec, condimentum eget augue. Quisque
-            condimentum ipsum ut ipsum ultrices consequat. Morbi vel congue
-            nunc. Etiam aliquam elementum rutrum. Vestibulum ante ipsum primis
-            in faucibus orci luctus et ultrices posuere cubilia curae;
-            Vestibulum varius, turpis eu bibendum mattis, ante urna tempus
-            libero, sit amet volutpat mauris libero ac neque.
-          </p>{" "}
-          <p>
-            Vestibulum elit erat, efficitur eu porttitor in, tempus at metus.
-            Sed vehicula nibh tincidunt quam pellentesque, vel sollicitudin quam
-            pretium. Morbi in risus vehicula, pellentesque urna sed,
-            pellentesque nisl. Donec a quam libero. Morbi eu odio ut eros
-            efficitur placerat. Aliquam lacinia mi nibh, non ultricies tortor
-            pellentesque ac. Vivamus pretium ante mi. Cras fringilla libero a
-            elit cursus feugiat. Nulla quam lorem, rutrum in leo ut, mattis
-            consectetur lorem. Mauris auctor lacus risus, semper viverra lorem
-            porta in. Vestibulum id nisl ut dolor tincidunt maximus. Nullam odio
-            risus, molestie non convallis id, ultrices eget metus. Fusce egestas
-            nisl vitae dolor laoreet, porttitor tincidunt lacus scelerisque. Sed
-            ultricies risus in tellus semper, eu dapibus erat sollicitudin. Nam
-            rutrum elit sed maximus consectetur. Morbi ipsum lorem, sodales
-            vitae mi sit amet, hendrerit suscipit est. Quisque placerat finibus
-            eros sed facilisis. Ut tristique hendrerit orci, eu viverra mauris
-            facilisis eu. Suspendisse scelerisque nisi vel nibh feugiat
-            sagittis. Donec cursus non dui non mollis. Donec mattis nunc odio,
-            sed aliquet nunc sagittis in. Aenean vulputate mauris sed gravida
-            sagittis.{" "}
-          </p>
-        </div>
-        <div className="home-info-contact">
+
+        <div className="home-info-contact" id="contact">
           <div>
             <h1>NOUS CONTACTER</h1>
             <p>
-              Vestibulum elit erat, efficitur eu porttitor in, tempus at metus.
-              Sed vehicula nibh tincidunt quam pellentesque, vel sollicitudin
-              quam pretium. Morbi in risus vehicula, pellentesque urna sed,
-              pellentesque nisl. Donec a quam libero. Morbi eu odio ut eros
-              efficitur placerat. Aliquam lacinia mi nibh, non ultricies tortor
-              pellentesque ac. Vivamus pretium ante mi. Nullam odio risus,
-              molestie non convallis id, ultrices eget metus. Ut tristique
-              hendrerit orci, eu viverra mauris facilisis eu. Suspendisse
-              scelerisque nisi vel nibh feugiat sagittis. Donec cursus non dui
-              non mollis. Donec mattis nunc odio, sed aliquet nunc sagittis in.
-              Aenean vulputate mauris sed gravida sagittis.{" "}
+              Vous pouvez nous contacter grace{" "}
+              <b>au numéro de téléphone présent ci-dessous</b>.
             </p>{" "}
             <p>
-              Fusce egestas nisl vitae dolor laoreet, porttitor tincidunt lacus
-              scelerisque. Sed ultricies risus in tellus semper, eu dapibus erat
-              sollicitudin. Nam rutrum elit sed maximus consectetur. Morbi ipsum
-              lorem, sodales vitae mi sit amet, hendrerit suscipit est. Quisque
-              placerat finibus eros sed facilisis.
+              Nous sommes disponnible pour toute question ou prise de
+              rendez-vous de <b>6h à 20h tous les jours</b>.
             </p>{" "}
             <p>
-              Cras fringilla libero a elit cursus feugiat. Nulla quam lorem,
-              rutrum in leo ut, mattis consectetur lorem. Mauris auctor lacus
-              risus, semper viverra lorem porta in. Vestibulum id nisl ut dolor
-              tincidunt maximus.
+              Nous pouvons exercer les soins à domicile ainsi qu'à notre cabinet
+              présent au <b>93 Rue de l'Ancien Hôpital, 84100 Orange</b>.
             </p>
-            <PhoneNumber phoneNumber={"41 15 10 20 30"} />
+            <PhoneNumber phoneNumber={"06 07 40 54 64"} />
           </div>
           <div>
-            <img src={plaque} alt="plaque" />
+            <iframe
+              title="google map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2863.4327858422935!2d4.808111676202418!3d44.13632047108321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b59194152998e7%3A0xbe3448ca23b550c3!2sCabinet%20infirmier%20Coste%20D%C3%A9borah!5e0!3m2!1sfr!2sfr!4v1716473960727!5m2!1sfr!2sfr"
+              width="800"
+              height="600"
+              style={{ border: 0 }}
+              loading="lazy"
+            ></iframe>
           </div>
         </div>
         <div className="map"></div>

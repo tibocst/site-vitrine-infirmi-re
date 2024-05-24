@@ -7,22 +7,23 @@ function Footer() {
   return (
     <footer className="footer">
       <div>
-        <Link to="/" className="google-icon_a">
+        <Link to="https://g.co/kgs/ttfcNpL" className="google-icon_a">
           <img src={googleIcon} alt="Icone Google" />
         </Link>
         <p>
           <i>
-            crédit - 2017 - 2024 - ANGEL DUMONTANT - MONTPELLIER - 41 15 10 20
-            30
+            DEBORAH COSTE - 93 Rue de l'Ancien Hôpital, 84100 Orange - 06 07 40 54 64
           </i>
         </p>
-        <PhoneNumber phoneNumber={"41 15 10 20 30"} />
-        <p>
+        <PhoneNumber phoneNumber={"06 07 40 54 64"} />
+        <p className="footer-article">
           <i>
-            disclaimer à modifier : Selon les dispositions de l'Article 4312-37
-            du code de la santé publique, le présent site de Madame NOM ne
-            présente pas d'aspect promotionnel. Sa seule motivation est
-            l'information de la patientèle fréquentant le cabinet.
+            Selon l'Article R4312-37
+            de la Section 2 du code de la Santé Publique : La profession d'infirmier ou d'infirmière ne 
+            doit pas être pratiquée comme un commerce. Tous les procédés directs 
+            ou indirects de réclame ou publicité sont interdits aux infirmiers ou 
+            infirmières. La seule motivation de Madame Coste est
+            l'information de la patientèle sur les pratiques, la méthode de contact ainsi que les horaires du cabinet.
           </i>
         </p>
         <div className="footer-lien-ordre">
@@ -30,6 +31,7 @@ function Footer() {
           <Link to="https://www.ordre-infirmiers.fr/">
             Ordre National des Infirmers
           </Link>
+          
         </div>
       </div>
     </footer>

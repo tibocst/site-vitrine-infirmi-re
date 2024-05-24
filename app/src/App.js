@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Error from './pages/Error'
 
-const LOGO = require("./assets/pngegg.png");
+const LOGO = require("./assets/rythme-cardiaque.png");
 
 function App() {
   return (

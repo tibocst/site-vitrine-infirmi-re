@@ -6,7 +6,7 @@
 }
 
 .home-main-info {
-    height: 400px;
+    height: 90vh;
     background-image: url("../assets/test-main.jpg");
     background-position: center;
     background-size: 100% auto;
@@ -47,12 +47,20 @@
 
 .home-info-pdp {
     display: flex;
-    justify-content: space-between;
-    background-color: #f6d3a2;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2c37;
     color: white;
+    height: 90vh;
 }
 
 .home-info-pdp > div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1330px;
+}
+
+.home-info-pdp > div > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,20 +68,20 @@
     flex: 1;
 }
 
-.home-info-pdp_img{
+.home-info-pdp_img {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 615px;
-    height: 410px;
-    clip-path:ellipse(33% 50%);
+    width: 465px;
+    height: 460px;
+    clip-path:ellipse(50% 50%);
 }
 
-.home-info-pdp > div > div > img {
-    width: 600px;
-    height: 400px;
-    clip-path:ellipse(33% 50%);
+.home-info-pdp >  div > div > div > img {
+    width: 450px;
+    height: 450px;
+    clip-path:ellipse(50% 50%);
 }
 
 .home-info-pdp_text > h1 {
@@ -83,6 +91,17 @@
 .home-info-pdp_text > p {
     font-weight: 400;
     font-size: 1.1em;
+}
+
+#home-info-stack {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    overflow: hidden;
+    max-width: 1330px;
+    align-self: center;
+    justify-content: center;
+    padding: 50px 100px 50px 100px;
 }
 
 .home-info-pratique {
@@ -122,6 +141,8 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    height: 90vh;
+    overflow: hidden;
 }
 
 .home-info-contact > div:nth-child(1) {
@@ -152,14 +173,17 @@
     justify-content: center;
     align-items: center;
     background-color: #545454;
-    width: 315px;
-    height: 210px;
-    clip-path:ellipse(33% 50%);
+    /* clip-path:ellipse(33% 50%); */
+    border: 2px solid #151e25 ;
 }
 
-.home-info-contact > div > img {
-    width: 300px;
-    height: 200px;
-    clip-path:ellipse(33% 50%);
+.home-info-contact > div > iframe {
+    width: 600px;
+    height: 400px;
+    /* clip-path:ellipse(33% 50%); */
 }
 
+.check-green {
+    width: 18px;
+    filter: invert(26%) sepia(64%) saturate(6827%) hue-rotate(114deg) brightness(92%) contrast(107%);
+}

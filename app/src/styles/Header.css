@@ -21,6 +21,7 @@
     justify-content: center;
     text-decoration: none;
     color: none;
+    gap: 20px;
   }
   
   .main-nav-logo > img {
@@ -46,7 +47,7 @@
   }
 
   .main-nav-menu > a:hover {
-    color: #f6d3a2;
+    color: #00995c;
   }
   
   .main-nav-menu > a > p {
