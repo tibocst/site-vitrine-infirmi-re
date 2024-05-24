@@ -20,8 +20,13 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: none;
+    color: black;
     gap: 20px;
+  }
+
+  .main-nav-logo:visited {
+    text-decoration: none;
+    color: #000000;
   }
   
   .main-nav-logo > img {
@@ -44,6 +49,12 @@
   
   .main-nav-menu > a {
     text-decoration: none;
+    color: black;
+  }
+
+  .main-nav-menu > a:visited {
+    text-decoration: none;
+    color: black;
   }
 
   .main-nav-menu > a:hover {
