@@ -2,8 +2,8 @@ import "../../styles/Home.css";
 import pdp from "../../assets/pdp-deb.png";
 import PhoneNumber from "../../components/PhoneNumber";
 import phone from "../../assets/phone-solid.svg";
-import location from "../../assets/location-dot-solid.svg";
-import graduation from "../../assets/graduation-cap-solid.svg";
+import house from "../../assets/house-medical-solid.svg";
+import card from "../../assets/id-card-solid.svg";
 import calendar from "../../assets/calendar-check-solid.svg";
 import check from "../../assets/circle-check-solid.svg";
 import InfoCard from "../../components/InfoCard";
@@ -27,20 +27,20 @@ function Home() {
             <div className="home-info-pdp_text" id="votre-infirmiere">
               <h1>VOTRE INFIRMIÈRE</h1>
               <p>
-                Nous sommes situés sur la ville d'<b>Orange</b> et assurons tous
-                types de soins infirmiers tous les jours de <b>6 h à 20 h</b>.{" "}
+                Situés sur la ville d'<b>Orange (84100)</b>, nous assurons tous
+                types de soins infirmiers tous les jours.{" "}
               </p>
               <p>
                 Notre cabinet comporte uniquement des infirmières{" "}
                 <b>diplômées d'État</b> répondant à l'Ordre des infirmiers.
               </p>
               <p>
-                Elles seront <b>bienveillantes, douces</b> et sauront s'occuper
+                Elles seront <b>bienveillantes, professionnelle</b> et sauront s'occuper
                 de leur patientelle de la meilleure des manières.
               </p>
               <p>
                 Les soins peuvent être pratiqués{" "}
-                <b>à domicile ou bien au cabinet</b>. Ils nécessiteront une
+                <b>à domicile et au cabinet sur rendez-vous</b>. Ils nécessiteront une
                 prescription médicale.
               </p>
               <p>
@@ -55,13 +55,13 @@ function Home() {
             <h1>INFORMATIONS PRATIQUES</h1>
             <div className="home-info-pratique_card">
               <InfoCard
-                icon={graduation}
+                icon={card}
                 text={"Carte vitale et tiers payant"}
-                altIcon={"graduation logo"}
+                altIcon={"card logo"}
               />
               <InfoCard
-                icon={location}
-                text={"Cabinet et Domicile"}
+                icon={house}
+                text={"Domicile et Cabinet"}
                 altIcon={"location logo"}
               />
               <InfoCard
@@ -111,8 +111,7 @@ function Home() {
               rendez-vous de <b>6h à 20h tous les jours</b>.
             </p>{" "}
             <p>
-              Nous pouvons exercer les soins à domicile ainsi qu'à notre cabinet
-              présent au <b>93 Rue de l'Ancien Hôpital, 84100 Orange</b>.
+              Nous pouvons exercer les soins à domicile mais aussi au cabinet présent au <b>93 Rue de l'Ancien Hôpital, 84100 Orange</b>.
             </p>
             <PhoneNumber phoneNumber={"06 07 40 54 64"} />
           </div>

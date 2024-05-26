@@ -1,8 +1,10 @@
+@import url('variables.css');
+
 .footer {
     display: flex;
     flex-direction: column;
     background-color: #1f2c37;
-    border-top: 10px solid #00995c;
+    border-top: 10px solid var(--color-second);
     align-items: center;
 }
 
@@ -45,7 +47,7 @@
 }
 
 .footer-lien-ordre > a{
-    color: #00995c;
+    color: var(--color-second);
 }
 
 .footer-article {

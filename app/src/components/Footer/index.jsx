@@ -23,7 +23,7 @@ function Footer() {
             doit pas être pratiquée comme un commerce. Tous les procédés directs 
             ou indirects de réclame ou publicité sont interdits aux infirmiers ou 
             infirmières. La seule motivation de Madame Coste est
-            l'information de la patientèle sur les pratiques, la méthode de contact ainsi que les horaires du cabinet.
+            l'information de la patientèle sur les pratiques, la méthode de contact ainsi que les horaires.
           </i>
         </p>
         <div className="footer-lien-ordre">

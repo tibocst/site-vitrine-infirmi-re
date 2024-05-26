@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 .info-card {
     display: flex;
     flex-direction: column;
@@ -13,7 +15,7 @@
     height: 170px;
     width: 170px;
     background-color: white;
-    border: 3px solid #00995c;
+    border: 3px solid var(--color-second);
     border-radius: 50%;
 }
 
@@ -23,7 +25,7 @@
     justify-content: center;
     height: 150px;
     width: 150px;
-    background-color: #00995c;
+    background-color: var(--color-second);
     border-radius: 50%;
 }
 

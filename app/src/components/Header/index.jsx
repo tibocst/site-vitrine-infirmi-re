@@ -24,7 +24,7 @@ function Header(props) {
     <nav className="main-nav">
       <NavLink className="main-nav-logo" to="/">
         <img className="main-nav-logo-image" src={src} alt="Infirmière Logo" />
-        <p>DEBORAH COSTE</p>
+        <p>Déborah COSTE</p>
       </NavLink>
       <div className="main-nav-menu">
         <NavLink to="#votre-infirmiere" onClick={goToHash(hash)}>

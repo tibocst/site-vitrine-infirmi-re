@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 .main-nav {
     height: 100px;
     display: flex;
@@ -58,7 +60,7 @@
   }
 
   .main-nav-menu > a:hover {
-    color: #00995c;
+    color: var(--color-second);
   }
   
   .main-nav-menu > a > p {

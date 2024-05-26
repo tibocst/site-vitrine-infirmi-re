@@ -185,5 +185,6 @@
 
 .check-green {
     width: 18px;
-    filter: invert(26%) sepia(64%) saturate(6827%) hue-rotate(114deg) brightness(92%) contrast(107%);
+    /* filter: invert(26%) sepia(64%) saturate(6827%) hue-rotate(114deg) brightness(92%) contrast(107%); */
+    filter: invert(14%) sepia(26%) saturate(5711%) hue-rotate(268deg) brightness(104%) contrast(129%);
 }

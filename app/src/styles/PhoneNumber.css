@@ -1,5 +1,7 @@
+@import url('variables.css');
+
 .phone-number {
-    background-color: #00995c;
+    background-color: var(--color-second);
     padding: 15px;
     border-radius: 10px;
     display: flex;
