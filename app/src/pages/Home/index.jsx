@@ -17,7 +17,8 @@ function Home() {
     <div className="home" id="votre-infirmiere">
       <div className="home-main-info">
         <h2>Bienvenue au cabinet de</h2>
-        <h1>DEBORAH COSTE, INFIRMIÈRE À ORANGE</h1>
+        <h1>Déborah Coste</h1>
+        <h1>INFIRMIÈRE LIBÉRALE À ORANGE</h1>
         <PhoneNumber phoneNumber={"06 07 40 54 64"} />
       </div>
       <div className="home-info">
@@ -129,6 +130,7 @@ function Home() {
               </div>
             </div>
           </div>
+          <div id="purple-bar"></div>
           <div className="home-info-display-line-third" id="contact">
             <div>
               <h1>NOUS CONTACTER</h1>
