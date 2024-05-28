@@ -39,7 +39,7 @@
     font-size: 2em;
     margin: 0;
     font-weight: 600;
-    opacity: 70%;
+    opacity: 100%;
   }
   
   .main-nav-menu {
@@ -60,6 +60,7 @@
   }
 
   .main-nav-menu > a:hover {
+    opacity: 100%;
     color: var(--color-second);
   }
   
@@ -69,7 +70,28 @@
     font-weight: 300;
     opacity: 70%;
   }
+
+  .main-nav-menu > a:nth-child(3) > div {
+    max-height: 25px;
+    max-width: 150px;
+  }
+
+  .main-nav-menu > a:nth-child(3) > div > img {
+    max-height: 15px !important;
+  }
+
+  .main-nav-menu > a:nth-child(3) > div > p {
+    font-size: 15px !important;
+  }
+
+  .main-nav-menu > a:nth-child(3) > div {
+    max-height: 10px;
+  }
   
   a:visited {
     color: black;
+  }
+
+  #phone-number-nav {
+    max-height: 25px;
   }

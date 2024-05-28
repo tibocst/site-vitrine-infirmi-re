@@ -1,6 +1,7 @@
 import "../../styles/Header.css";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import PhoneNumber from "../../components/PhoneNumber";
 
 function goToHash(hash) {
   
@@ -22,19 +23,19 @@ function Header(props) {
   const { hash } = useLocation();
   return (
     <nav className="main-nav">
-      <NavLink className="main-nav-logo" to="/">
+      <NavLink className="main-nav-logo" to="#votre-infirmiere">
         <img className="main-nav-logo-image" src={src} alt="Infirmière Logo" />
         <p>Déborah COSTE</p>
       </NavLink>
       <div className="main-nav-menu">
-        <NavLink to="#votre-infirmiere" onClick={goToHash(hash)}>
-          <p>Votre Infirmière</p>
-        </NavLink>
         <NavLink to="#infos" onClick={goToHash(hash)}>
           <p>Infos</p>
         </NavLink>
         <NavLink to="#contact" onClick={goToHash(hash)}>
           <p>Contact</p>
+        </NavLink>
+        <NavLink to="tel:0607405464" onClick={goToHash(hash)}>
+            <PhoneNumber phoneNumber={"06 07 40 54 64"} />
         </NavLink>
       </div>
     </nav>

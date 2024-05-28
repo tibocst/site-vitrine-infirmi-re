@@ -1,13 +1,14 @@
 import "../../styles/Footer.css";
 import { Link } from "react-router-dom";
 import PhoneNumber from "../../components/PhoneNumber";
-import googleIcon from "../../assets/google-plus-g.svg";
+
+import googleIcon from "../../assets/google-plus.svg";
 
 function Footer() {
   return (
     <footer className="footer">
       <div>
-        <Link to="https://g.co/kgs/ttfcNpL" className="google-icon_a">
+        <Link to="https://g.co/kgs/ttfcNpL" target="_blank" rel="noopener noreferrer" className="google-icon_a">
           <img src={googleIcon} alt="Icone Google" />
         </Link>
         <p>

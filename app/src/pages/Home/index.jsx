@@ -1,25 +1,54 @@
 import "../../styles/Home.css";
 import PhoneNumber from "../../components/PhoneNumber";
 import InfoCard from "../../components/InfoCard";
+import { Link } from "react-router-dom";
 
-import pdp from "../../assets/pdp-deb.png";
-import pdpFull from "../../assets/4395713d-9b68-4da7-90e7-41735375f9be.jpg";
-import phone from "../../assets/phone-solid.svg";
-import house from "../../assets/house-medical-solid.svg";
-import card from "../../assets/id-card-solid.svg";
-import calendar from "../../assets/calendar-check-solid.svg";
-import check from "../../assets/circle-check-solid.svg";
-import dalia from "../../assets/dahlia-8209085_1920.jpg";
-import blossom from "../../assets/blossom-165998_1920.jpg";
+import pdpFull from "../../assets/photo-de-profil.jpg";
+import phone from "../../assets/phone.svg";
+import house from "../../assets/house.svg";
+import card from "../../assets/card.svg";
+import calendar from "../../assets/calendar.svg";
+import check from "../../assets/circle-check.svg";
+import stetho from "../../assets/stetho.jpg";
+import cardiaque from "../../assets/cardiaque.jpg";
+import googleIcon from "../../assets/google-plus.svg";
 
 function Home() {
   return (
     <div className="home" id="votre-infirmiere">
       <div className="home-main-info">
-        <h2>Bienvenue au cabinet de</h2>
-        <h1>Déborah Coste</h1>
-        <h1>INFIRMIÈRE LIBÉRALE À ORANGE</h1>
-        <PhoneNumber phoneNumber={"06 07 40 54 64"} />
+        <div className="home-main-info_text">
+          <h2>Bienvenue au cabinet de</h2>
+          <h1>Déborah Coste</h1>
+          <h1 className="home-main-info_text_h1">INFIRMIÈRE LIBÉRALE À ORANGE</h1>
+        </div>
+        <div className="home-main-info_button">
+          <div>
+            {" "}
+            {/* <h2>Pour prendre vos rendez-vous :</h2> */}
+            <PhoneNumber phoneNumber={"06 07 40 54 64"} />
+          </div>
+          <Link
+            to="https://g.co/kgs/ttfcNpL"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="google-link"
+          >
+            <div className="google-link-slide">
+              <div className="google-link-slide_info">
+                <p>Me trouver sur Google</p>
+              </div>
+            </div>
+            <Link
+              to="https://g.co/kgs/ttfcNpL"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="google-link-slide_icon"
+            >
+              <img src={googleIcon} alt="Icone Google" />
+            </Link>
+          </Link>
+        </div>
       </div>
       <div className="home-info">
         <div className="home-info-display">
@@ -57,7 +86,7 @@ function Home() {
               </div>
             </div>
             <div>
-              <img src={dalia} alt="fleur dalia" />
+              <img src={stetho} alt="fleur dalia" />
             </div>
           </div>
           <div className="home-info-display-line-second">
@@ -65,41 +94,40 @@ function Home() {
               <h1>VOTRE INFIRMIÈRE</h1>
               <div>
                 <p>
-                  Situés sur la ville d'<b>Orange (84100)</b>, nous assurons
-                  tous types de soins infirmiers tous les jours.{" "}
+                  Infirmière diplômée d'état (IDE), j'effectue tout type de
+                  soins et prise en charge sur le secteur d'Orange (84100)
+                  <b> à votre domicile ou à mon cabinet sur rendez-vous</b> et
+                  sur prescription médicale. En collaboration avec mes
+                  collègues, j'assure la continuité des soins 7 jours/7 , de 6h
+                  à 20h.{" "}
                 </p>
                 <p>
-                  Notre cabinet comporte uniquement des infirmières{" "}
-                  <b>diplômées d'État</b> répondant à l'Ordre des infirmiers.
+                  <b>Bienveillante et professionnelle</b> , je vous permets des
+                  conditions de soins, de rétablissement ou de convalescence
+                  optimales.
                 </p>
                 <p>
-                  Elles seront <b>bienveillantes, professionnelle</b> et sauront
-                  s'occuper de leur patientelle de la meilleure des manières.
-                </p>
-                <p>
-                  Les soins peuvent être pratiqués{" "}
-                  <b>à domicile et au cabinet sur rendez-vous</b>. Ils
-                  nécessiteront une prescription médicale.
-                </p>
-                <p>
-                  Vous pouvez prendre rendez-vous avec nos infirmières au{" "}
+                  Contactez-moi pour tout renseignement et premier contact au{" "}
                   <b>06 07 40 54 64</b>.
                 </p>
               </div>
             </div>
             <div>
-              <img src={blossom} alt="fleur blossom" />
+              <img src={cardiaque} alt="stethoscope" id="stetho" />
             </div>
             <div>
               <h1>SOINS INFIRMIERS</h1>
               <div>
                 <p>
-                  Nous effectuons différents soins et prenons en charge tous
+                  Le cabinet effectue différents soins et prend en charge tous
                   types de pathologies dans le cadre de :
                 </p>{" "}
                 <p>
                   <img className="check-green" src={check} alt="check icon" />{" "}
-                  <b>vos soins de pansements et post opératoires</b>
+                  <b>
+                    vos soins de pansements, post opératoires et plaies
+                    chroniques
+                  </b>
                 </p>
                 <p>
                   <img className="check-green" src={check} alt="check icon" />{" "}
@@ -107,15 +135,20 @@ function Home() {
                 </p>
                 <p>
                   <img className="check-green" src={check} alt="check icon" />{" "}
-                  <b>vos soins diabétiques ou cancérologiques</b>
+                  <b>
+                    vos soins diabétiques ou cancérologiques et suivi de
+                    pathologies chroniques
+                  </b>
                 </p>
                 <p>
                   <img className="check-green" src={check} alt="check icon" />{" "}
                   <b>
-                    d'autres types de soins médicaux sont évidemment disponibles
+                    Autres types de soins médicaux : administration de
+                    traitement, préparation de semainiers, soins d'hygiène
+                    permettant un maintien à domicile, etc...
                   </b>
                 </p>{" "}
-                <p>
+                {/* <p>
                   Du début de votre prise en charge jusqu'à votre guérison, nous
                   sommes <b>à l'écoute</b> de vos besoins et intervenons pour{" "}
                   <b>
@@ -126,7 +159,7 @@ function Home() {
                   médicale. Nous pratiquons le <b>tiers payant</b> sur
                   présentation de la carte vitale et d'une mutuelle ou CMU. Nous
                   restons à votre disposition pour davantage de renseignement.
-                </p>{" "}
+                </p>{" "} */}
               </div>
             </div>
           </div>
@@ -136,17 +169,16 @@ function Home() {
               <h1>NOUS CONTACTER</h1>
               <div className="home-info-display-line-third_text">
                 <p>
-                  Vous pouvez nous contacter grace{" "}
-                  <b>au numéro de téléphone présent ci-dessous</b>.
+                  Mes collègues et moi-même sommes disponibles pour toute
+                  question ou prise de rendez-vous de{" "}
+                  <b>6h à 20h tous les jours</b>.
                 </p>{" "}
                 <p>
-                  Nous sommes disponnible pour toute question ou prise de
-                  rendez-vous de <b>6h à 20h tous les jours</b>.
+                  Nous exerçons les soins au domicile du patient ou au cabinet
+                  situé <b>93 Rue de l'Ancien Hôpital, 84100 Orange</b>.
                 </p>{" "}
                 <p>
-                  Nous pouvons exercer les soins à domicile mais aussi au
-                  cabinet présent au{" "}
-                  <b>93 Rue de l'Ancien Hôpital, 84100 Orange</b>.
+                  Besoin d'une infirmière? Un seul numéro pour nous joindre :
                 </p>
               </div>
 

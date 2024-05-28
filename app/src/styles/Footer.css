@@ -29,12 +29,12 @@
     height: 40px;
     width: 40px;
     padding: 10px;
-    transition: background-color 800ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
 }
 
 .google-icon_a:hover {
     background-color: #81bce9;
-    transition: background-color 800ms ease-in-out;
+    transition: background-color 500ms ease-in-out;
 }
 
 .google-icon_a > img {
@@ -47,7 +47,7 @@
 }
 
 .footer-lien-ordre > a{
-    color: var(--color-second);
+    color: #b59bcb;
 }
 
 .footer-article {

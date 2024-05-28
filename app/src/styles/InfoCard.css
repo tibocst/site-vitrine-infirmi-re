@@ -27,12 +27,14 @@
     width: 90px;
     background-color: var(--color-second);
     border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform 1.5s;
 }
 
 .info-card > div > div:hover {
     transform: rotate(360deg);
-    transition: transform 1s;
-    transition-duration: 1sec;
+    transition: transform 1.5s;
+    transition-duration: 1.5sec;
 }
 
 .info-card > div > div > img {

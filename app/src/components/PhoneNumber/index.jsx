@@ -1,12 +1,13 @@
 import "../../styles/PhoneNumber.css";
-import phoneIcon from '../../assets/phone-solid.svg'
+
+import phoneIcon from '../../assets/phone.svg'
 
 function PhoneNumber(props) {
     const { phoneNumber } = props;
   return (
     <div className="phone-number">
-        <img src={phoneIcon} alt="inconne de téléphone" />
-        <p>{phoneNumber}</p>
+        <img src={phoneIcon} alt="icone de téléphone" />
+        <p id="phone-number_p">{phoneNumber}</p>
     </div>
   );
 }
