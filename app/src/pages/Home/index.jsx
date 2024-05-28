@@ -184,7 +184,7 @@ function Home() {
 
               <PhoneNumber phoneNumber={"06 07 40 54 64"} />
             </div>
-            <div>
+            <div className="home-info-display-line-third_iframe">
               <iframe
                 title="google map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2863.4327858422935!2d4.808111676202418!3d44.13632047108321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b59194152998e7%3A0xbe3448ca23b550c3!2sCabinet%20infirmier%20Coste%20D%C3%A9borah!5e0!3m2!1sfr!2sfr!4v1716473960727!5m2!1sfr!2sfr"
