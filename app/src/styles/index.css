@@ -7,3 +7,15 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* Extra small devices (phones, portrait) */
+@media only screen and (max-width: 600px) {
+  .body {
+    display: flex;
+    width: 100% !important;
+  }
+
+  #root {
+      width: 100% !important;
+  }
+}

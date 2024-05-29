@@ -49,3 +49,17 @@
     text-align: center;
     width: 150px;
 }
+
+/* Extra small devices (phones, portrait) */
+@media only screen and (max-width: 600px) {
+    .info-card {
+        height: 200px;
+      }
+  }
+
+  /* Small devices (phones, landscape) */
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+  .info-card {
+    height: 200px;
+  }
+  }

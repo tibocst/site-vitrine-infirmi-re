@@ -20,7 +20,9 @@ function Home() {
         <div className="home-main-info_text">
           <h2>Bienvenue au cabinet de</h2>
           <h1>Déborah Coste</h1>
-          <h1 className="home-main-info_text_h1">INFIRMIÈRE LIBÉRALE À ORANGE</h1>
+          <h1 className="home-main-info_text_h1">
+            INFIRMIÈRE LIBÉRALE À ORANGE
+          </h1>
         </div>
         <div className="home-main-info_button">
           <div>
@@ -39,14 +41,9 @@ function Home() {
                 <p>Me trouver sur Google</p>
               </div>
             </div>
-            <Link
-              to="https://g.co/kgs/ttfcNpL"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="google-link-slide_icon"
-            >
+            <div className="google-link-slide_icon">
               <img src={googleIcon} alt="Icone Google" />
-            </Link>
+            </div>
           </Link>
         </div>
       </div>
