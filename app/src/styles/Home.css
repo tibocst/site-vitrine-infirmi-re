@@ -302,6 +302,7 @@ img { max-width: 1300px;}
     .home-main-info_text {
         align-items: center;
         width: 100%;
+        padding: inherit !important;
     }
 
     .home-main-info_text > h2 {
