@@ -9,6 +9,7 @@
 
 .home-main-info {
     height: 90vh;
+    min-height: 600px;
     background-image: url("../assets/flowers.jpg");
     background-position: center;
     background-size: cover;
