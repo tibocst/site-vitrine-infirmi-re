@@ -38,7 +38,6 @@ function Header(props) {
   
 
   const toggleMenu = () => {
-    console.log("passé menu");
     setMenuOpen(!menuOpen);
   };
 
