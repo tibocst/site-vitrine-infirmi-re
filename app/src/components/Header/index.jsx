@@ -45,14 +45,14 @@ function Header(props) {
   return (
     <nav className="main-nav">
       <NavLink className="main-nav-logo" to="#votre-infirmiere">
-        <img className="main-nav-logo-image" src={src} alt="Infirmière Logo" />
+        <img className="main-nav-logo-image" src={src} alt="Logo de la page web infirmière déborah coste" />
         <p>Déborah COSTE</p>
       </NavLink>
       <img
         className="menu-toggle-button"
         onClick={toggleMenu}
         src={menuBurger}
-        alt="menu burger"
+        alt="logo pour menu burger"
       />
       <div className={`main-nav-menu ${menuOpen ? "active" : ""}`}>
         <NavLink

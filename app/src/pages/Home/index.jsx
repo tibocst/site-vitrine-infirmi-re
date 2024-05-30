@@ -15,6 +15,34 @@ import cardiaque from "../../assets/cardiaque.jpg";
 import googleIcon from "../../assets/google-plus.svg";
 
 function Home() {
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Déborah Coste - Infirmière Libérale à Orange",
+    "description": "Bienvenue au cabinet de Déborah Coste, infirmière libérale à Orange. Prenez rendez-vous pour des soins à domicile ou au cabinet.",
+    "url": "https://vitrine-infirmiere.tibocst.fr",
+    "telephone": "06 07 40 54 64",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "93 Rue de l'Ancien Hôpital",
+      "addressLocality": "Orange",
+      "postalCode": "84100",
+      "addressCountry": "FR"
+    },
+    "image": "https://vitrine-infirmiere.tibocst.fr/assets/photo-de-profil.jpg",
+    "openingHours": "Mo-Su 06:00-20:00",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "44.1362975",
+      "longitude": "4.8106974"
+    },
+    // "sameAs": [
+    //   "https://www.facebook.com/votresite",
+    //   "https://www.twitter.com/votresite",
+    //   "https://www.instagram.com/votresite"
+    // ]
+  };
+  
   return (
     <div className="home" id="votre-infirmiere">
       <Helmet>
@@ -27,6 +55,10 @@ function Home() {
           name="keywords"
           content="infirmière, soins à domicile, cabinet, Orange, soins infirmiers, Déborah Coste"
         />
+        <link rel="canonical" href="https://vitrine-infirmiere.tibocst.fr/" />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLdData)}
+        </script>
       </Helmet>
       <div className="home-main-info">
         <div className="home-main-info_text">
@@ -63,7 +95,7 @@ function Home() {
         <div className="home-info-display">
           <div className="home-info-display-line-first" id="infos">
             <div>
-              <img src={pdpFull} alt="infirmière" />
+              <img src={pdpFull} alt="Déborah Coste Infirmière à Orange" />
             </div>
             <div>
               <h1>INFORMATIONS PRATIQUES</h1>
@@ -72,30 +104,30 @@ function Home() {
                   <InfoCard
                     icon={card}
                     text={"Carte vitale et tiers payant"}
-                    altIcon={"card logo"}
+                    altIcon={"Logo de carte vitale"}
                   />
                   <InfoCard
                     icon={house}
                     text={"Domicile et Cabinet"}
-                    altIcon={"location logo"}
+                    altIcon={"Logo d'une maison"}
                   />
                 </div>
                 <div>
                   <InfoCard
                     icon={calendar}
                     text={"7 jours sur 7"}
-                    altIcon={"calendar logo"}
+                    altIcon={"Logo d'un calendrier"}
                   />
                   <InfoCard
                     icon={phone}
                     text={"06 07 40 54 64"}
-                    altIcon={"phone logo"}
+                    altIcon={"Logo de téléphone"}
                   />
                 </div>
               </div>
             </div>
             <div>
-              <img src={stetho} alt="fleur dalia" />
+              <img src={stetho} alt="stethoscope" />
             </div>
           </div>
           <div className="home-info-display-line-second">
@@ -122,7 +154,7 @@ function Home() {
               </div>
             </div>
             <div>
-              <img src={cardiaque} alt="stethoscope" id="stetho" />
+              <img src={cardiaque} alt="ligne cardique" id="stetho" />
             </div>
             <div>
               <h1>SOINS INFIRMIERS</h1>
