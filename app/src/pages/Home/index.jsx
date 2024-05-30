@@ -2,6 +2,7 @@ import "../../styles/Home.css";
 import PhoneNumber from "../../components/PhoneNumber";
 import InfoCard from "../../components/InfoCard";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 import pdpFull from "../../assets/photo-de-profil.jpg";
 import phone from "../../assets/phone.svg";
@@ -16,6 +17,17 @@ import googleIcon from "../../assets/google-plus.svg";
 function Home() {
   return (
     <div className="home" id="votre-infirmiere">
+      <Helmet>
+        <title>Déborah Coste - Infirmière Libérale à Orange</title>
+        <meta
+          name="description"
+          content="Bienvenue au cabinet de Déborah Coste, infirmière libérale à Orange. Prenez rendez-vous pour des soins à domicile ou au cabinet."
+        />
+        <meta
+          name="keywords"
+          content="infirmière, soins à domicile, cabinet, Orange, soins infirmiers, Déborah Coste"
+        />
+      </Helmet>
       <div className="home-main-info">
         <div className="home-main-info_text">
           <h2>Bienvenue au cabinet de</h2>
