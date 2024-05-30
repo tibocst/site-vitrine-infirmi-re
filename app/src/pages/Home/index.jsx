@@ -2,7 +2,8 @@ import "../../styles/Home.css";
 import PhoneNumber from "../../components/PhoneNumber";
 import InfoCard from "../../components/InfoCard";
 import { Link } from "react-router-dom";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
 
 import pdpFull from "../../assets/photo-de-profil.jpg";
 import phone from "../../assets/phone.svg";
@@ -18,23 +19,24 @@ function Home() {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Déborah Coste - Infirmière Libérale à Orange",
-    "description": "Bienvenue au cabinet de Déborah Coste, infirmière libérale à Orange. Prenez rendez-vous pour des soins à domicile ou au cabinet.",
-    "url": "https://vitrine-infirmiere.tibocst.fr",
-    "telephone": "06 07 40 54 64",
-    "address": {
+    name: "Déborah Coste - Infirmière Libérale à Orange",
+    description:
+      "Bienvenue au cabinet de Déborah Coste, infirmière libérale à Orange. Prenez rendez-vous pour des soins à domicile ou au cabinet.",
+    url: "https://vitrine-infirmiere.tibocst.fr",
+    telephone: "06 07 40 54 64",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "93 Rue de l'Ancien Hôpital",
-      "addressLocality": "Orange",
-      "postalCode": "84100",
-      "addressCountry": "FR"
+      streetAddress: "93 Rue de l'Ancien Hôpital",
+      addressLocality: "Orange",
+      postalCode: "84100",
+      addressCountry: "FR",
     },
-    "image": "https://vitrine-infirmiere.tibocst.fr/assets/photo-de-profil.jpg",
-    "openingHours": "Mo-Su 06:00-20:00",
-    "geo": {
+    image: "https://vitrine-infirmiere.tibocst.fr/assets/photo-de-profil.jpg",
+    openingHours: "Mo-Su 06:00-20:00",
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": "44.1362975",
-      "longitude": "4.8106974"
+      latitude: "44.1362975",
+      longitude: "4.8106974",
     },
     // "sameAs": [
     //   "https://www.facebook.com/votresite",
@@ -42,7 +44,7 @@ function Home() {
     //   "https://www.instagram.com/votresite"
     // ]
   };
-  
+
   return (
     <div className="home" id="votre-infirmiere">
       <Helmet>
@@ -56,9 +58,7 @@ function Home() {
           content="infirmière, soins à domicile, cabinet, Orange, soins infirmiers, Déborah Coste"
         />
         <link rel="canonical" href="https://vitrine-infirmiere.tibocst.fr/" />
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLdData)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(jsonLdData)}</script>
       </Helmet>
       <div className="home-main-info">
         <div className="home-main-info_text">
@@ -69,10 +69,12 @@ function Home() {
           </h1>
         </div>
         <div className="home-main-info_button">
-          <div>
+          <div className="home-main-info_button_link">
             {" "}
             {/* <h2>Pour prendre vos rendez-vous :</h2> */}
-            <PhoneNumber phoneNumber={"06 07 40 54 64"} />
+            <NavLink to="tel:0607405464">
+              <PhoneNumber phoneNumber={"06 07 40 54 64"} />
+            </NavLink>
           </div>
           <Link
             to="https://g.co/kgs/ttfcNpL"
@@ -223,7 +225,9 @@ function Home() {
                 </p>
               </div>
 
-              <PhoneNumber phoneNumber={"06 07 40 54 64"} />
+              <NavLink to="tel:0607405464">
+                <PhoneNumber phoneNumber={"06 07 40 54 64"} />
+              </NavLink>
             </div>
             <div className="home-info-display-line-third_iframe">
               <iframe

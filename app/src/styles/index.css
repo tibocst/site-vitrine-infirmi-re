@@ -8,6 +8,15 @@ body {
   flex-direction: column;
 }
 
+#root a {
+  text-decoration: none;
+  color: none;
+}
+
+#root a:visited {
+  color: none;
+}
+
 /* Extra small devices (phones, portrait) */
 @media only screen and (max-width: 600px) {
   .body {
