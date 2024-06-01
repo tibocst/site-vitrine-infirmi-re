@@ -165,32 +165,42 @@ function Home() {
                   Le cabinet effectue différents soins et prend en charge tous
                   types de pathologies dans le cadre de :
                 </p>{" "}
-                <p>
-                  <img className="check-green" src={check} alt="check icon" />{" "}
-                  <b>
-                    vos soins de pansements, post opératoires et plaies
-                    chroniques
-                  </b>
-                </p>
-                <p>
-                  <img className="check-green" src={check} alt="check icon" />{" "}
-                  <b>vos prises de sang et perfusions</b>
-                </p>
-                <p>
-                  <img className="check-green" src={check} alt="check icon" />{" "}
-                  <b>
-                    vos soins diabétiques ou cancérologiques et suivi de
-                    pathologies chroniques
-                  </b>
-                </p>
-                <p>
-                  <img className="check-green" src={check} alt="check icon" />{" "}
-                  <b>
-                    Autres types de soins médicaux : administration de
-                    traitement, préparation de semainiers, soins d'hygiène
-                    permettant un maintien à domicile, etc...
-                  </b>
-                </p>{" "}
+                <div className="check-list">
+                  <div>
+                    <img className="check-green" src={check} alt="check icon" />
+                    <p>
+                      <b>
+                        vos soins de pansements, post opératoires et plaies
+                        chroniques
+                      </b>
+                    </p>
+                  </div>
+                  <div>
+                    <img className="check-green" src={check} alt="check icon" />
+                    <p>
+                      <b>vos prises de sang et perfusions</b>
+                    </p>
+                  </div>
+                  <div>
+                    <img className="check-green" src={check} alt="check icon" />
+                    <p>
+                      <b>
+                        vos soins diabétiques ou cancérologiques et suivi de
+                        pathologies chroniques
+                      </b>
+                    </p>
+                  </div>
+                  <div>
+                    <img className="check-green" src={check} alt="check icon" />
+                    <p>
+                      <b>
+                        Autres types de soins médicaux : administration de
+                        traitement, préparation de semainiers, soins d'hygiène
+                        permettant un maintien à domicile, etc...
+                      </b>
+                    </p>
+                  </div>
+                </div>
                 {/* <p>
                   Du début de votre prise en charge jusqu'à votre guérison, nous
                   sommes <b>à l'écoute</b> de vos besoins et intervenons pour{" "}

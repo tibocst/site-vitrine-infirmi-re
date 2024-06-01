@@ -24,7 +24,7 @@
 
 .google-icon_a {
     display: flex;
-    background-color: var(--color-primary);
+    background-color: var(--color-third);
     border-radius: 50%;
     height: 40px;
     width: 40px;
@@ -33,7 +33,7 @@
 }
 
 .google-icon_a:hover {
-    background-color: #81bce9;
+    background-color: var(--color-primary);
     transition: background-color 500ms ease-in-out;
 }
 
