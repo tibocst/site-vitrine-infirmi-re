@@ -111,7 +111,7 @@ function Home() {
               rendez-vous de <b>6h à 20h tous les jours</b>.
             </p>{" "}
             <p>
-              Nous pouvons exercer les soins à domicile mais aussi au cabinet présent au <b>93 Rue de l'Ancien Hôpital, 84100 Orange</b>.
+              Nous pouvons exercer les soins à domicile mais aussi au cabinet présent au <b>462 Avenue Félix Ripert, 84100 Orange</b>.
             </p>
             <PhoneNumber phoneNumber={"06 07 40 54 64"} />
           </div>
